@@ -10,7 +10,7 @@ const poll = {
         `${this.question}\n${this.options.join("\n")}\n\n(Write your option)`
       )
     );
-
+    // kiểm tra người dùng nhập giá trị có hợp lệ hay không?
     while (isNaN(ans) || ans < 0 || ans > 3) {
       alert(`The wrong answer! Please select the number between 0 and 3.`);
       ans = prompt(
