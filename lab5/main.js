@@ -55,7 +55,18 @@ for (let i = 0; i < listOfNeighbours.length; i++) {
 }
 
 // Lab 5.7
-
+// const populations = [98, 134, 1441, 10];
+// function percentageOfWorld1(population) {
+//   return (population / 7900) * 100;
+// }
+const percentage3 = [];
+// let size = populations.length;
+let i = 0;
+while (i < size) {
+  percentage3.push(percentageOfWorld1(populations[i]).toFixed(1));
+  i++;
+}
+console.log(percentage3);
 // Lab 5.8
 const mark = {
   fullName: "Mark Miller",
