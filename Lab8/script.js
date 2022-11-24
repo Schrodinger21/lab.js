@@ -24,6 +24,7 @@ console.log(typeof btnsOpenModal);
 btnCloseModal.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
 
+// Sự kiện khi ấn nút esc
 document.addEventListener("keydown", function (e) {
   // console.log(e.key);
 

@@ -14,12 +14,12 @@ document.querySelector(".check").addEventListener("click", function () {
 
   // Check điều kiện khi input
   if (!guess) {
-    // thông báo mesage lỗi khi không nhập giá trị
+    // thông báo mesage lỗi cho người chơi
     displayMessage("⛔️ No number!");
 
-    // When player wins
+    // Khi người chơi thắng
   } else if (guess === secretNumber) {
-    // thông báo mesage người chơi chiến thằng
+    // thông báo message người chơi chiến thằng
     displayMessage("🎉 Correct Number!");
     // hiển thị đáp án ra màn hình cho người dùng thấy
     document.querySelector(".number").textContent = secretNumber;
@@ -39,7 +39,6 @@ document.querySelector(".check").addEventListener("click", function () {
       score--;
       document.querySelector(".score").textContent = score;
     } else {
-      // document.querySelector('.message').textContent = '💥 You lost the game!';
       displayMessage("💥 You lost the game!");
       document.querySelector(".score").textContent = 0;
     }
@@ -50,7 +49,6 @@ document.querySelector(".again").addEventListener("click", function () {
   score = 20;
   secretNumber = Math.trunc(Math.random() * 20) + 1;
 
-  // document.querySelector('.message').textContent = 'Start guessing...';
   displayMessage("Start guessing...");
   document.querySelector(".score").textContent = score;
   document.querySelector(".number").textContent = "?";
